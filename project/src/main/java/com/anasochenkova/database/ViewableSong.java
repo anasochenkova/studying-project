@@ -1,18 +1,13 @@
 package com.anasochenkova.database;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
-
 /**
- * Created by Anastasia on 25.05.2017.
+ * Created by Anastasia on 01.06.2017.
  */
-@Entity(name="songs")
-public class Song {
-    @Id
+public class ViewableSong {
     private int songId;
     private String songName;
     private int songYear;
-    private int bandId;
+    private String bandName;
 
     public int getSongId() {
         return songId;
@@ -38,16 +33,16 @@ public class Song {
         this.songYear = songYear;
     }
 
-    public int getBandId() {
-        return bandId;
+    public String getBandName() {
+        return bandName;
     }
 
-    public void setBandId(int bandId) {
-        this.bandId = bandId;
+    public void setBandName(String bandName) {
+        this.bandName = bandName;
     }
 
     @Override
     public String toString() {
-        return "Song{ "+songId+ ", "+ songName+", "+ songYear+", "+ bandId+" }";
+        return "ViewableSong{ "+songId+ ", "+ songName+", "+ songYear+", "+ bandName+" }";
     }
 }

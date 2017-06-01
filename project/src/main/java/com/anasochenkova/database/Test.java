@@ -11,10 +11,13 @@ import java.util.List;
 public class Test {
     public static void main(String args[]){
         String query = "select * from bands";
-        List<Song> songlist= new LinkedList<Song>();
+        List<ViewableSong> songlist= new LinkedList<ViewableSong>();
         DBWorker worker = new DBWorker();
-        songlist = worker.getFilteredorFullSongs("","");
-        for (Song song: songlist){
+        //worker.insertSong("lalalala",2017,0);
+        //worker.updateSong(40, "songYear", "2006");
+        worker.deleteSong(45);
+        songlist = worker.getFilteredorFullViewableSongs("","");
+        for (ViewableSong song: songlist){
             System.out.println(song);
         }
         /*
