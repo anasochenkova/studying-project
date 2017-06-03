@@ -5,8 +5,11 @@ import java.sql.*;
 import java.util.LinkedList;
 import java.util.List;
 
-/**
+/**This class is needed for testing the other classes' functionality
  * Created by Anastasia on 29.05.2017.
+ *
+ * @author Anastasia
+ * @version 1.0
  */
 public class Test {
     public static void main(String args[]){

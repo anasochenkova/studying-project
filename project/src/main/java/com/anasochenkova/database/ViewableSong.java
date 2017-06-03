@@ -1,7 +1,10 @@
 package com.anasochenkova.database;
 
-/**
+/**This class is needed for representing <strong>songs</strong> in Viewable form
  * Created by Anastasia on 01.06.2017.
+ *
+ * @author Anastasia
+ * @version 1.0
  */
 public class ViewableSong {
     private int songId;
